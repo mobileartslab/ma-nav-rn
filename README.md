@@ -1,2 +1,2 @@
 # ma-map-rn
-Mobile Arts Lab Maps  -  React Native
+Mobile Arts Lab Map  -  React Native
