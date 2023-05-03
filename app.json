@@ -18,16 +18,26 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.mobileartslab.ma_nav_rn",
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyA9fqXHh58XX-vrCGvugRuo4U_6BrZLEw0"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.mobileartslab.ma_nav_rn"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6a6e8f59-a6f2-406c-a755-7d5fb8665f9f"
+      }
     }
   }
 }

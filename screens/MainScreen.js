@@ -1,37 +1,26 @@
 import {
-    Image,
-    StyleSheet,
-    Text,
-    View,
-    SafeAreaView,
-    TextInput,
-    Button
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
 } from 'react-native'
-import Images from '../assets/images'
+import MapView, {PROVIDER_GOOGLE} from 'react-native-maps'
 
 export default function MainScreen() {
-    return (
-        <SafeAreaView style={styles.container}>
-            <View style={styles.innerContainer}>
-                <Text style={styles.title}>Main Screen</Text>
-            </View>
-        </SafeAreaView>
-    );
+  return (
+   <View style={styles.mapContainer}>
+     <MapView style={styles.map} provider={PROVIDER_GOOGLE} />
+   </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#ffffff',
-        alignItems: 'center',
-        flex: 1
-    },
-    innerContainer: {
-        backgroundColor: '#ffffff',
-        alignItems: 'center',
-    },
-    title: {
-        fontSize: 32,
-        fontWeight: '500',
-        marginVertical: 10
-    },
+  mapContainer: {
+    flex: 1,
+  },
+  map: {
+    width: '100%',
+    height: '100%',
+    border: 'solid red'
+  },
 });
