@@ -21,7 +21,7 @@
       "bundleIdentifier": "com.mobileartslab.ma_nav_rn",
       "supportsTablet": true,
       "config": {
-        "googleMapsApiKey": "AIzaSyA9fqXHh58XX-vrCGvugRuo4U_6BrZLEw0"
+        "googleMapsApiKey": "API-KEY"
       }
     },
     "android": {
