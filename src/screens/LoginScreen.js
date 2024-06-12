@@ -125,6 +125,7 @@ export default function LoginScreen({ navigation }) {
                 style={styles.input}
                 placeholder="password"
                 value={fields.password}
+                autoCapitalize="none"
                 onChangeText={(text) => handleFieldChange('password', text)}
                 secureTextEntry
               />
